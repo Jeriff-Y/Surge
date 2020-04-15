@@ -1,0 +1,25 @@
+#!name=Get Cookie
+#!desc=脚本Cookie获取
+#!system=ios
+
+
+# 京东金豆签到
+http-request https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean(Index|GroupStageIndex) max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+
+# 电信签到
+http-request ^https:\/\/wapside.189.cn:9001\/api\/home\/homeInfo script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.cookie.js
+http-response ^https:\/\/wapside.189.cn:9001\/api\/home\/homeInfo script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.cookie.js, requires-body=true
+
+# 联通签到
+http-request ^https:\/\/act.10010.com\/SigninApp\/signin\/querySigninActivity.htm script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js
+http-request ^https:\/\/act.10010.com\/SigninApp(.*?)\/signin\/daySign.do script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js
+http-request ^https:\/\/m.client.10010.com\/dailylottery\/static\/(textdl\/userLogin|active\/findActivityInfo) script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js
+
+# 人人签到
+http-request ^https:\/\/api\.rr\.tv\/user\/profile script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/rrtv/rrtv.cookie.js
+
+# 微信活动抽奖
+http-request ^https:\/\/api-hdcj\.9w9\.com\/v\d\/sign script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/WeChatLottery/WeChatLottery_new.js
+
+[MITM]
+hostname = %APPEND% api.m.jd.com, wapside.189.cn:9001, act.10010.com, m.client.10010.com, *.rr.tv, api-hdcj.9w9.com
