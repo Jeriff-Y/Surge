@@ -1,12 +1,13 @@
 #!name=TikTok
-#!desc=Remove TikTok‘s regional restrictions.
+#!desc=移除TikTok广告和水印
 #!system=ios
 
 [URL Rewrite]
+
 (?<=_region=)CN(?=&) JP 307
 (?<=&app_version=)15..(?=.?.?&) 1 307
-
 (?<=\?version_code=)15..(?=.?.?&) 1 307
+(.*video_id=\w{32})(.*watermark=)(.*) $1 302
 
 [MITM]
 hostname = %APPEND% *.musical.ly, *.tiktokv.com, *.byteoversea.com, *.snssdk.com
