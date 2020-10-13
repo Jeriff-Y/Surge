@@ -3,11 +3,10 @@
 #!system=ios
 
 [URL Rewrite]
-
+^https://api[\w-]*?.tiktokv.com/aweme/v\d/policy/notice/? - reject
 (?<=_region=)CN(?=&) JP 307
-(?<=&app_version=)17..(?=.?.?&) 1 307
-(?<=\?version_code=)17..(?=.?.?&) 1 307
-(.*video_id=\w{32})(.*watermark=)(.*) $1 302
+(?<=&app_version=)1[6-9]..(?=.?.?&) 100. 307
+(?<=\?version_code=)1[6-9]..(?=.?.?&) 100. 307
 
 [MITM]
 hostname = %APPEND% *.musical.ly, *.tiktokv.com, *.byteoversea.com, *.snssdk.com
