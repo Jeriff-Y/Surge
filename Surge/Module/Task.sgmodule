@@ -9,4 +9,4 @@
 # 人人签到
 人人视频 = type=cron,cronexp=6 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/rrtv/rrtv.js,script-update-interval=0
 # 京东宠汪汪
-京东宠汪汪 = type=cron,cronexp="15 */2 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy.js
+京东宠汪汪 = type=cron,cronexp="15 */2 * * *",wake-system=1,timeout=20,script-path=https://gitee.com/lxk0301/scripts/raw/master/jd_joy.js
