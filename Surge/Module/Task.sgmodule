@@ -12,7 +12,5 @@
 京东宠汪汪 = type=cron,cronexp="15 */2 * * *",wake-system=1,timeout=20,script-path=https://gitee.com/lxk0301/scripts/raw/master/jd_joy.js
 # 种豆得豆
 京东种豆得豆 = type=cron,cronexp="1 7-21/2 * * *",wake-system=1,timeout=120,script-path=https://gitee.com/lxk0301/scripts/raw/master/jd_plantBean.js
-# 星推官
-京东星推官 = type=cron,cronexp=2 0 * * *,wake-system=1,timeout=320,script-path=https://gitee.com/lxk0301/scripts/raw/master/jd_xtg.js
 # 取关京东店铺商品
 取关京东店铺商品 = type=cron,cronexp="55 23 * * *",wake-system=1,timeout=20,script-path=https://gitee.com/lxk0301/scripts/raw/master/jd_unsubscribe.js
