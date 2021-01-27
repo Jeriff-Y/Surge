@@ -3,38 +3,8 @@
 #!system=ios
 
 [Script]
-# 京东宠汪汪
-京东宠汪汪 = type=cron,cronexp="15 */2 * * *",wake-system=1,timeout=20,script-path=https://gitee.com/lxk0301/scripts/raw/master/jd_joy.js
-
-# 种豆得豆
-京东种豆得豆 = type=cron,cronexp="1 7-21/2 * * *",wake-system=1,timeout=120,script-path=https://gitee.com/lxk0301/scripts/raw/master/jd_plantBean.js
-
-# 取关京东店铺商品
-取关京东店铺商品 = type=cron,cronexp="55 23 * * *",wake-system=1,timeout=20,script-path=https://gitee.com/lxk0301/scripts/raw/master/jd_unsubscribe.js
-
 # 京东赚赚
 京东赚赚 = type=cron,cronexp=0 9 * * *,timeout=60,script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jdzz.js
 
 # 东东工厂
 东东工厂 = type=cron,cronexp=0 */3 * * *,timeout=60,script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/dd_factory.js
-
-# 京喜工厂
-京喜工厂 = type=cron,cronexp=”10 * * * *“,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_dreamFactory.js
-
-# 十元街
-十元街 = type=cron,cronexp=”10 7 * * *“,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_syj.js
-
-# 京喜财富岛
-京喜财富岛 = type=cron,cronexp="30 23 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/MoPoQAQ/Script/main/Me/jx_cfd.js
-
-# 领京豆额外奖励
-领京豆额外奖励 = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_bean_home.js
-
-# 京东快递签到 活动地址：https://jingcai-h5.jd.com/#/ 签到领豆,14天内满4次和7次享额外奖励，每天运行一次即可
-京东快递签到 = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_kd.js
-
-# 京东汽车 签到满500赛点可兑换500京豆 长期活动 活动入口：首页👉京东汽车👉屏幕右中部，车主福利
-京东汽车 = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_car.js
-
-# 京东直播
-京东直播 = type=cron,cronexp="10-20/5 12 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_live.js
