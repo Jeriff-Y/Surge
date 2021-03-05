@@ -9,7 +9,7 @@
 # 人人签到
 人人视频 = type=cron,cronexp=6 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/rrtv/rrtv.js,script-update-interval=0
 
-悬喵 = type=cron,cronexp=15 0,6,12,18 * * *,script-path=https://raw.githubusercontent.com/age174/-/main/xsmm.js,script-update-interval=0
+悬喵 = type=cron,cronexp=15 0,6,12,18,20 * * *,script-path=https://raw.githubusercontent.com/age174/-/main/xsmm.js,script-update-interval=0
 
 悬赏喵喵 = type=http-request,pattern=https://vip.75787.com/app/index.php,requires-header=1,max-size=0,script-path=https://raw.githubusercontent.com/age174/-/main/xsmm.js,script-update-interval=0
 
