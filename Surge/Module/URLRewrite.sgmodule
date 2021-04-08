@@ -2,6 +2,9 @@
 #!desc=URLRewrite
 
 [URL Rewrite]
+
+^https://pbs.twimg.com/media/\?|format=jpg&name=large url request-header format=jpg&name=large request-header format=jpg&name=orig
+
 # > Redirect Google Service
 ^https?:\/\/(www.)?g\.cn https:\/\/www.google.com 302
 ^https?:\/\/(www.)?google\.cn https:\/\/www.google.com 302
