@@ -1,5 +1,10 @@
+#!name=JS
+#!desc=
+
+[Script]
 #workingcopy
 #打开网址 https://workingcopy.app/education/ 获取学生优惠
 ^https:\/\/education\.github\.com\/api\/user$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/workingcopy.js
 
+[MITM]
 hostname = education.github.com
