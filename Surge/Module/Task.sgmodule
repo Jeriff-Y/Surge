@@ -14,3 +14,6 @@
 
 # 金榜创造营
 金榜创造营 = type=cron,cronexp="13 1,22 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_gold_creator.js
+
+# 5G超级盲盒
+5G超级盲盒 = type=cron,cronexp=”0 0,1-23/3 * * *“,wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_mohe.js
