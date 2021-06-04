@@ -17,3 +17,6 @@
 
 # 5G超级盲盒
 5G超级盲盒 = type=cron,cronexp=”0 0,1-23/3 * * *“,wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_mohe.js
+
+# 新潮品牌狂欢
+新潮品牌狂欢 = type=cron,cronexp="4 10 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_mcxhd.js
