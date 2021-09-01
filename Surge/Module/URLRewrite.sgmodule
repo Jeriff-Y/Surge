@@ -1,6 +1,10 @@
 #!name=URL Rewrite
 #!desc=URL Rewrite
 
+[General]
+# 自定义GeoIP数据库
+geoip-maxmind-url = https://cdn.jsdelivr.net/gh/Hackl0us/GeoIP2-CN@release/Country.mmdb
+
 [URL Rewrite]
 # > Redirect Google Service
 ^https?:\/\/(www.)?g\.cn https:\/\/www.google.com 302
