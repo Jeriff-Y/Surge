@@ -1,7 +1,8 @@
 #!name=Script
 #!desc=Script Pack
 
-[Rule]
+[Panel]
+youtube_check = script-name=youtube_check,title="YouTube Premium 解锁检测",style=alert,content="请刷新面板",update-interval=1800
 
 [Script]
 # > 微信 App 内被屏蔽链接快捷跳转
@@ -11,6 +12,8 @@ TF下载修正 = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v
 
 # 微信朋友圈去广告
 Wechat.js = type=http-response,pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
+
+youtube_check = type=generic,script-path=https://gist.githubusercontent.com/Hyseen/5ae36a6a5cb5690b1f2bff4aa19c766f/raw/youtube_premium_check.js?version=1633090827446, argument=title=YouTube 解锁检测
 
 [Header Rewrite]
 # 百度防跳转
