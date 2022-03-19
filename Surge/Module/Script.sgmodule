@@ -11,9 +11,9 @@ TrafficStatistics = script-name=TrafficStatistics,update-interval=1
 youtube_check = script-name=youtube_check,title="YouTube Premium 解锁检测",style=alert,content="请刷新面板",update-interval=1800
 
 #策略组面板 可重复配置 注意修改相应字段
-Telegram= script-name=groupPanel,update-interval=5
+groupPanel= script-name=Telegram,update-interval=5
 
-Emby= script-name=groupPanel,update-interval=5
+groupPanel= script-name=Emby,update-interval=5
 
 [Script]
 #附带重载配置,Surge Pro标题,可显示启动时间,点击刷新为重载配置
