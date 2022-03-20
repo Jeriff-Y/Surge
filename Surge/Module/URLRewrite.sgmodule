@@ -1,6 +1,9 @@
 #!name=URL Rewrite
 #!desc=URL Rewrite
 
+[Rule]
+AND,((PROTOCOL,UDP),(DEST-PORT,443)),REJECT-NO-DROP
+
 [URL Rewrite]
 # > Redirect Google Service
 ^https?:\/\/(www.)?g\.cn https:\/\/www.google.com 302
