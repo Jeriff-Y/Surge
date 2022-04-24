@@ -16,7 +16,10 @@ Bili Search = type=http-request,pattern=^https:\/\/ap(p|i)\.bili(bili|api)\.(com
 
 百度防跳转 = type=http-response,pattern=^https:\/\/boxer\.baidu\.com\/scheme\?scheme,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/baidu-no-redirect.js
 
+京东多合一签到 = type=cron,cronexp=5 0 * * *,wake-system=1,timeout=60,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+
+获取京东Cookie = type=http-request,requires-body=1,pattern=^https:\/\/(api\.m|me-api|ms\.jr)\.jd\.com\/(client\.action\?functionId=signBean|user_new\/info\/GetJDUserInfoUnion\?|gw\/generic\/hy\/h5\/m\/appSign\?),script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 
 
 [MITM]
-hostname = %APPEND% mp.weixin.qq.com, weixin110.qq.com, ap?.bilibili.com, ap?.biliapi.net, boxer.baidu.com
+hostname = %APPEND% mp.weixin.qq.com, weixin110.qq.com, ap?.bilibili.com, ap?.biliapi.net, boxer.baidu.com, ms.jr.jd.com, me-api.jd.com, api.m.jd.com
